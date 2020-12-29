@@ -57,6 +57,12 @@ function setup(){
   ground2 = new Ground(900, 195, 200, 10);
   ground3 = new Ground(750, 600, 1500, 20);
 
+  
+  var options = {
+    density:2,
+    friction:1
+}
+
   polygon = Bodies.circle(50,200,20);
   World.add(myWorld,polygon);
 
