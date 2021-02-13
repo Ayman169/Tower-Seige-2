@@ -39,7 +39,7 @@ function setup(){
   block11 = new Block(570, 180);
   block12 = new Block(630, 180);
 
-  block13 = new Block(600, 140);
+  block13 = new Block(600, 150);
 
   block14 = new Block(900, 170);
   block15 = new Block(930, 170);
@@ -63,7 +63,7 @@ function setup(){
     friction:1
 }
 
-  polygon = Bodies.circle(50,200,20);
+  polygon = Bodies.circle(50,200,20,options);
   World.add(myWorld,polygon);
 
   chain = new Slingshot(this.polygon,{x:100,y:200});
